@@ -2,7 +2,7 @@
 
 This is the read me for the this fun little project. I hope you enjoyed my solution and hidden quirks. For example, the background image is a special tribute to some of my favorite movies. Please see the following instructions for getting the project running locally.
 
-For your convenience I have made the app available on the following url: www.url.com/website
+For your convenience I have made the app available on the following url: http://midnightaddress.com/
 
 Also please note that basic SEO meta tags and other minor SEO and non-assignment related items were excluded from this assignment. This is not to say I do not have an understanding of these things, just that it was not required in the assignment and since this will not be a production level site it did not make much sense to add that info.
 
