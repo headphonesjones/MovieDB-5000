@@ -8,7 +8,7 @@ Also please note that basic SEO meta tags and other minor SEO and non-assignment
 
 # Foundation libsass template
 
-This is a template to start your own project that uses Grunt and libsass!
+Start your own local project that uses Grunt and libsass!
 
 ## Requirements
 
