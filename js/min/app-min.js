@@ -1,0 +1,1 @@
+$(document).foundation(),$(document).ready(function(){$("#home_movie_input").focus(),$("#movie_box").hide()});

@@ -1,0 +1,224 @@
+@import "settings";
+@import "foundation";
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,200);
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+/* Variables */
+$primary: #607D8B;
+$darkPrimary: #455A64;
+$lightPrimary: #CFD8DC;
+$white: #FFFFFF;
+$accent: #FFC107;
+$primaryText: #212121;
+$secondaryText: #727272;
+$gray: #B6B6B6;
+
+
+/* Global */
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: $primaryText;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, li, a, input, button{
+    font-family: 'Raleway', sans-serif;
+    color: $primaryText;
+    letter-spacing: .03em;
+}
+
+.color_overlay{
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-color: rgba(255,255,255, .9);
+}
+
+.bold-sans{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.thin-sans{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.large-text{
+    font-size: 2em;
+}
+
+/* HOME STYLINGS */
+
+.home_title-container{
+    padding-top: 10px;
+}
+
+#home-text{
+    position: relative;
+}
+
+#home_movie_input{
+    height: 50px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: 5px solid $darkPrimary !important;
+    transition: all 1s ease;
+
+    &:focus{
+        border-bottom: 5px solid $accent !important;
+    }
+}
+
+
+.home_sub_title{
+    margin-bottom: 120px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 200;
+}
+
+input{
+    font-size: 1.5em !important;
+}
+
+#submit_search-button{
+    margin-top: 20px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid $darkPrimary;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.2em !important;
+    color: $darkPrimary;
+    transition: all 1s ease;
+
+    &:hover{
+        background-color: $accent;
+        border: 2px solid $accent;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.home_title-container{
+    transition: all 1s ease;
+    position: relative;
+}
+
+.db_model_number{
+    letter-spacing: 0em;
+}
+
+
+.my-new-list{
+    position: absolute;
+}
+
+.movie_info-container{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    h3{
+        font-size: 1.75em;
+        font-weight: 700;
+    }
+
+    h5{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1.15em;
+        font-weight: 200;
+    }
+}
+
+.movie_results-container, .movie_details-container{
+    padding: 0;
+    margin-top: 50px;
+}
+
+.movie_object-container{
+    position: relative;
+    left: -5%;
+}
+#movie_box{
+    position: relative;
+    bottom: 250px;
+    transition: all 1 ease;
+}
+
+#search-results{
+    position: relative;
+    bottom: 220px;
+}
+
+#loader{
+
+    img{
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 40em) {
+    .db_model_number {
+        position: relative;
+        bottom: 20px !important;
+    }
+    .home_sub_title{
+        margin-bottom: 60px;
+    }
+    .movie_image{
+        position: relative;
+        left: 0%;
+    }
+}
