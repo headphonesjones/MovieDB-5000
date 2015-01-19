@@ -15,7 +15,7 @@
         <h1>Movie Database <span class="bold-sans large-text db_model_number">5000</span></h1>
         <h5 class="home_sub_title">Search for any movie title and get results instantly</h5>
         <div class="medium-8 small-12 small-centered columns">
-          <input type="text" id="home_movie_input" placeholder="Search movie titles" />
+          <input type="text" id="home_movie_input" placeholder="Search movie titles" onkeydown="if (event.keyCode == 13) document.getElementById('submit_search-button').click()" />
 
           <input type="button" id="submit_search-button" value="Search" />
         </div>
